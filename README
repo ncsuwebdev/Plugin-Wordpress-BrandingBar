@@ -1,10 +1,52 @@
 Plugin for adding the NC State Branding Bar to the top of your Wordpress
 website.  This plugin has been tested in Wordpress 3.x.
 
-When downloading the source directly from GitHub, you will need to extract it
-into a folder, zip it, and then upload it to your Wordpress installation.  To
-avoid doing that, just download one of the versioned releases and then upload
-it directly.
 
-This plugin was created by the Office of Information Technology, Outreach
-Technology.
+----------
+Created By
+----------
+Plugin provided by NC State University Office of Information Technology
+
+Outreach Technology
+http://ot.ncsu.edu
+@ncsu_oit_ot
+
+
+-------------------------
+Installation Instructions
+-------------------------
+
+1:  Download the latest release (not actual project code) from the github page
+    located at:
+    http://github.com/ncsuwebdev/Plugin-Wordpress-BrandingBar
+
+2:  Extract folder "ncstate-branding-bar" into your Wordpress plugin
+    directory, typically located in /wp-content/plugins.  If your Wordpress
+    installation allows plugins to be installed via a zip file, you can do that
+    as well by clicking on "Plugins" -> "Add New" -> "Upload" and upload the
+    zip file."
+
+    NOTE:  This only works if you download the pre-packaged zip file from
+    github.  If you download the source directly, uploading that zip file will
+    not work correctly.  Essentially, you need to ensure that the
+    /wp-content/plugins/ncstate-branding-bar directory exists and put the
+    contents of the download in the folder.
+
+3:  Log into the admin section of your Wordpress site, typically at
+    http://[yoururl]/wp-admin
+
+4:  Click on "Plugins."
+
+5:  You should have a plugin called "NC State Branding Bar" in your
+    plugin list.  Click the "Activate" link under it.
+
+6:  Configuration can be done to the branding bar by visiting the link in the
+    "Settings" admin menu.
+
+
+----------
+References
+----------
+
+NC State Branding Guidelines
+http://www.ncsu.edu/brand
