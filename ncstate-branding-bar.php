@@ -134,6 +134,8 @@ class NcstateBrandingBar
      */
     public function settingsPage() {
         $options = $this->_bb->getOptions();
+
+        $colorOptions = $this->_bb->getColorOptions();
         
         require_once 'form.phtml';
     }

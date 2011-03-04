@@ -35,10 +35,9 @@
             </td>
             <td>
                 <select id="nbb_color" name="nbb_color">
-                    <option value="red" <?php selected($options['color'], 'red'); ?>><?php _e('White Text on Red Background', 'ncstate-branding-bar'); ?></option>
-                    <option value="black" <?php selected($options['color'], 'black'); ?>><?php _e('White Text on Black Background', 'ncstate-branding-bar'); ?></option>
-                    <option value="red_on_white" <?php selected($options['color'], 'red_on_white'); ?>><?php _e('Red Text on White Background', 'ncstate-branding-bar'); ?></option>
-                    <option value="black_on_white" <?php selected($options['color'], 'black_on_white'); ?>><?php _e('Black Text on White Background', 'ncstate-branding-bar'); ?></option>
+                    <?php foreach ($colorOptions as $key => $value): ?>
+                    <option value="<?php echo $key; ?>" <?php selected($options['color'], $key); ?>><?php _e($value, 'ncstate-branding-bar'); ?></option>
+                    <?php endforeach; ?>
                 </select>
             </td>
         </tr>
