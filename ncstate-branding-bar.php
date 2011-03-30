@@ -4,7 +4,7 @@
  * Plugin Name:  NC State Branding Bar
  * Plugin URI:   http://ot.ncsu.edu
  * Description:  Creates an NC State Branding bar at the top of whatever WP theme you select.
- * Version:      1.0.0
+ * Version:      1.0.2
  * Author:       OIT Outreach Technology
  * Author URI:   http://ot.ncsu.edu
  **************************************************************************/
