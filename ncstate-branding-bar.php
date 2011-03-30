@@ -117,6 +117,7 @@ class NcstateBrandingBar
             'siteUrl'        => $_POST['nbb_siteUrl'],
             'color'          => $_POST['nbb_color'],
             'centered'       => (bool)$_POST['nbb_centered'],
+            'secure'         => (bool)$_POST['nbb_secure'],
             'display'        => (bool)$_POST['nbb_display'],
             'noIframePrompt' => stripslashes($_POST['nbb_noIframePrompt']),
             'position'       => $_POST['nbb_position']
@@ -136,6 +137,8 @@ class NcstateBrandingBar
         $options = $this->_bb->getOptions();
 
         $colorOptions = $this->_bb->getColorOptions();
+
+        require_once 'Ncstate/Version.php';
         
         require_once 'form.phtml';
     }

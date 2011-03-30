@@ -12,7 +12,7 @@
         For more information, visit 
         <a href="http://www.ncsu.edu/brand/utility-bar/iframe/config/" target="_blank">http://www.ncsu.edu/brand/utility-bar/iframe/config/</a>.
     </p>
-    </div>
+</div>
 
     <form method="post" action="admin-post.php">
     <?php wp_nonce_field('ncstate-branding-bar'); ?>
@@ -26,6 +26,17 @@
                 <select id="nbb_display" name="nbb_display">
                     <option value="1" <?php selected((int)$this->_display, 1); ?>><?php _e('Yes', 'ncstate-branding-bar'); ?></option>
                     <option value="0" <?php selected((int)$this->_display, 0); ?>><?php _e('No', 'ncstate-branding-bar'); ?></option>
+                </select>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td width="150">
+                <label for="nbb_secure"><?php _e('Use Secure URLs (https)?', 'ncstate-branding-bar'); ?></label>
+            </td>
+            <td>
+                <select id="nbb_secure" name="nbb_secure">
+                    <option value="1" <?php selected((int)$options['secure'], 1); ?>><?php _e('Yes', 'ncstate-branding-bar'); ?></option>
+                    <option value="0" <?php selected((int)$options['secure'], 0); ?>><?php _e('No', 'ncstate-branding-bar'); ?></option>
                 </select>
             </td>
         </tr>
@@ -88,4 +99,6 @@
     </p>
 
     </form>
-</div>
+<br /><br />
+Uses version <?php echo Ncstate_Version::VERSION; ?> of the 
+<a href="https://github.com/ncsuwebdev/PHP-Ncstate">PHP-Ncstate library</a>.
