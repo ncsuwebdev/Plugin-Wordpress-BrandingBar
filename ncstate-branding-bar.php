@@ -93,7 +93,7 @@ class NcstateBrandingBar
             'options-general.php',
             __('NC State Branding Bar', 'ncstate-branding-bar'),
             __('NC State Branding Bar', 'ncstate-branding-bar'),
-            'read',
+            'edit_plugins',
             'ncstate-branding-bar',
             array($this, 'settingsPage')
         );
