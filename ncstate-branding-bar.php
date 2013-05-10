@@ -4,7 +4,7 @@
  * Plugin Name:  NC State Branding Bar
  * Plugin URI:   http://ot.ncsu.edu
  * Description:  Creates an NC State Branding bar at the top of whatever WP theme you select.
- * Version:      1.0.2
+ * Version:      1.0.3
  * Author:       OIT Outreach Technology
  * Author URI:   http://ot.ncsu.edu
  **************************************************************************/
@@ -12,8 +12,8 @@
 /**
  * Set the library as part of the include path
  */
-$filepath = realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'library';
-set_include_path($filepath . PATH_SEPARATOR . get_include_path());
+
+define( 'NCSUBRANDBAR_PATH', plugin_dir_path(__FILE__) );
 
 /**
  * Create the Ncstate Branding Bar plugin
@@ -48,7 +48,7 @@ class NcstateBrandingBar
     public function __construct()
     {
         // Use the Ncstate_Brand_Bar class
-        require_once 'Ncstate/Brand/Bar.php';
+        require_once NCSUBRANDBAR_PATH . 'library/Ncstate/Brand/Bar.php';
         $this->_bb = new Ncstate_Brand_Bar();
 
         // Load the settings
@@ -138,9 +138,9 @@ class NcstateBrandingBar
 
         $colorOptions = $this->_bb->getColorOptions();
 
-        require_once 'Ncstate/Version.php';
+        require_once NCSUBRANDBAR_PATH . 'library/Ncstate/Version.php';
         
-        require_once 'form.phtml';
+        require_once NCSUBRANDBAR_PATH . 'form.phtml';
     }
 
     /**
