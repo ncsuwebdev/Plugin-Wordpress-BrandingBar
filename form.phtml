@@ -90,6 +90,19 @@
                 * Will be displayed if the user has disabled iframes
             </td>
         </tr>
+        <tr valign="top">
+            <td width="150">
+                <label for="nbb_responsive"><?php _e('Responsive Brand Bar', 'ncstate-branding-bar'); ?></label>
+            </td>
+            <td>
+                <select id="nbb_responsive" name="nbb_responsive">
+                    <option value="1" <?php selected((int)$this->_responsive, 1); ?>><?php _e('Enabled', 'ncstate-branding-bar'); ?></option>
+                    <option value="0" <?php selected((int)$this->_responsive, 0); ?>><?php _e('Disabled', 'ncstate-branding-bar'); ?></option>
+                </select>
+                <br />
+                * Disabling will result in the default brand bar attempting to display on smaller resolution displays
+            </td>
+        </tr>
     </table>
 
 
